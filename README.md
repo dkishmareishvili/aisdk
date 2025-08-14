@@ -19,10 +19,10 @@ npm run dev
 
 This runs the app in Docker with:
 - Hot reload enabled
-- Port 3001 mapped to host
+- Port 3000 mapped to host
 - Volume mounting for live code changes
 
-Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Production
 
@@ -32,7 +32,7 @@ Run the production build:
 npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser.
+Open [http://localhost:3001](http://localhost:3001) with your browser.
 
 ### Available Commands
 
