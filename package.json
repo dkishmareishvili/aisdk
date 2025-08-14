@@ -8,7 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "docker:build": "docker build -t aisdk:latest .",
+    "docker:build-dev": "docker build -f Dockerfile.dev -t aisdk:dev .",
+    "docker:run": "docker run -p 3000:3000 aisdk:latest",
+    "docker:run-dev": "docker run -p 3000:3000 -v $(pwd):/app -v /app/node_modules aisdk:dev",
+    "docker:up": "docker-compose up app",
+    "docker:up-dev": "docker-compose --profile dev up app-dev",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
   },
   "dependencies": {
     "next": "15.4.6",
